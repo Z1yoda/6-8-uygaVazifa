@@ -1,0 +1,30 @@
+ {
+    "en": {
+        "translation": {
+            "About me": "About me",
+            "Skills": "Skills",
+            "Project": "Project",
+            "Contact": "Contact",
+            "Dark Mode": "Dark Mode"
+        }
+    },
+    "uz": {
+        "translation": {
+            "About me": "Men haqimda",
+            "Skills": "Ko'nikmalar",
+            "Project": "Loyiha",
+            "Contact": "Bog'lanish",
+            "Dark Mode": "Tungi rejim"
+        }
+    },
+    "ru": {
+        "translation": {
+            "About me": "обо мне",
+            "Skills": "навыки",
+            "Project": "проект",
+            "Contact": "Контакт",
+            "Dark Mode": "Тёмный режим"
+        }
+    }
+
+}

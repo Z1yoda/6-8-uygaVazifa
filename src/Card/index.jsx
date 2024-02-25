@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import "./index.css";
 import emoji from "../assets/Emoji.svg";
 import sun from '../assets/sun.svg'
@@ -6,6 +7,49 @@ import moon from '../assets/moon.svg'
 import rightimg from '../assets/rightimg.svg'
 
 function Card() {
+
+    useEffect(() => {
+        const savedMode = localStorage.getItem('darkMode');
+        if (savedMode === 'dark') {
+            enableDarkMode();
+        }
+    }, []);
+
+    function enableDarkMode() {
+        document.body.classList.add("darkMode");
+        updateModeTextAndImage(true);
+    }
+
+    function disableDarkMode() {
+        document.body.classList.remove("darkMode");
+        updateModeTextAndImage(false);
+    }
+
+    function updateModeTextAndImage(isDarkMode) {
+        const modeText = document.querySelector(".dark");
+        const sunImg = document.querySelector(".sunImg");
+
+        if (isDarkMode) {
+            modeText.textContent = "Dark Mode";
+            sunImg.src = moon;
+        } else {
+            modeText.textContent = "Light Mode";
+            sunImg.src = sun;
+        }
+
+        localStorage.setItem('darkMode', isDarkMode ? 'dark' : 'light');
+    }
+
+    function handleModeToggle() {
+        const isDarkModeActive = document.body.classList.contains('darkMode');
+
+        if (isDarkModeActive) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    }
+
     return (
         <div className="container">
             <header>
@@ -28,8 +72,9 @@ function Card() {
                     <option value="eng">eng</option>
                     <option value="rus">rus</option>
                 </select>
-                <div className="mode">
-                    Light Mode <span><img src={sun} alt="" /></span>
+                <div className="darkMode" onClick={handleModeToggle}>
+                    <p className="dark">Light Mode</p>
+                    <img className="sunImg" src={sun} alt="" />
                 </div>
             </header>
             <div className="content">
