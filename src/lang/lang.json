@@ -1,29 +1,44 @@
  {
-    "en": {
+    "eng": {
         "translation": {
-            "About me": "About me",
+            "About": "About me",
             "Skills": "Skills",
             "Project": "Project",
             "Contact": "Contact",
-            "Dark Mode": "Dark Mode"
+            "Dark": "Dark Mode",
+            "Light Mode": "Light Mode",
+            "hello": "Hi ✌️, I’m Charles, Front-end Developer",
+            "text": "I design and develop experiences that make people’s lives simpler through Web and Mobile apps.I work with FIgma , HTML5, CSS3, JavaScript, React, ReactNative and Flutter.",
+            "button1":"hire me",
+            "button2":"see my projects"
         }
     },
-    "uz": {
+    "uzb": {
         "translation": {
-            "About me": "Men haqimda",
+            "About": "Men haqimda",
             "Skills": "Ko'nikmalar",
             "Project": "Loyiha",
             "Contact": "Bog'lanish",
-            "Dark Mode": "Tungi rejim"
+            "Dark": "Tungi rejim",
+            "Light Mode": "Kunduzgi Mode",
+            "hello": "Salom ✌️, men Charlzman, front-end dasturchisi.",
+            "text": "Men veb va mobil ilovalar orqali odamlarning hayotini osonlashtiradigan yechimlarni ishlab chiqaman va ishlab chiqaman. Men FIgma, HTML5, CSS3, JavaScript, React, ReactNative va Flutter bilan ishlayman.",
+            "button1":"meni ishga oling",
+            "button2":"Mening loyihalarimni ko'ring"
         }
     },
-    "ru": {
+    "rus": {
         "translation": {
-            "About me": "обо мне",
+            "About": "обо мне",
             "Skills": "навыки",
             "Project": "проект",
             "Contact": "Контакт",
-            "Dark Mode": "Тёмный режим"
+            "Dark": "Тёмный режим",
+            "Light Mode": "Светлый режим",
+            "hello": "Привет ✌️, я Чарльз, фронтенд-разработчик",
+            "text": "Я проектирую и разрабатываю решения, которые упрощают жизнь людей с помощью веб- и мобильных приложений. Я работаю с FIgma, HTML5, CSS3, JavaScript, React, ReactNative и Flutter.",
+            "button1":"найми меня",
+            "button2":"Смотрите мои проекты"
         }
     }
 
